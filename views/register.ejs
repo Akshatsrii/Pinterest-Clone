@@ -1,0 +1,85 @@
+<%- include('partials/header') %>
+<body class="bg-cover bg-center flex items-center justify-center h-screen" style="background-image: url(https://tse3.mm.bing.net/th/id/OIP.pZWSY_8Sm3vxx7V4EG71bQHaEo?pid=Api&P=0&h=180);">
+ <div class="relative bg-white rounded-3xl shadow-lg p-6 md:p-10 w-full max-w-lg mx-auto">
+
+        <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <div class="flex justify-center mb-4">
+            <svg class="w-8 h-8 text-pinterest-red" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm3.12 13.56c-.53.18-1.11.08-1.55-.26l-2.07-1.6c-.4-.32-.5-.87-.27-1.3l1.1-2.03c.23-.43-.07-.96-.56-.96h-.3c-.3 0-.58.18-.7.45l-1.3 3.17c-.24.6.02 1.28.6 1.55c.87.4 1.9.18 2.45-.53l.4-.53c.18-.24.5-.28.74-.1s.38.4.28.64c-.45 1.1-1.7 1.8-2.9 1.58c-1.45-.27-2.5-1.5-2.5-2.95c0-1.1.6-2.1 1.5-2.6l3.3-1.8c1.1-.6 2.4-.1 2.9.9s.1 2.4-1 2.9l-1.6.85c-.1.05-.15.1-.2.18l.7 1.28c.15.28.05.64-.26.8z" />
+            </svg>
+        </div>
+
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">Welcome to Pinterest</h1>
+        <p class="text-center text-gray-600 mb-8 text-md">Find new ideas to try</p>
+
+        <form>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-bold text-gray-700 mb-2">Email</label>
+                <input type="email" id="email" placeholder="Email" class="w-full px-4 py-3 border-2 border-blue-500 rounded-2xl focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 transition" />
+            </div>
+
+            <div class="mb-2">
+                <label for="password" class="block text-sm font-bold text-gray-700 mb-2">Password</label>
+                <div class="relative">
+                    <input type="password" id="password" placeholder="Create a password" class="w-full px-4 py-3 border-2 border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+                    <button type="button" class="absolute inset-y-0 right-0 flex items-center pr-4 text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <p class="text-xs text-gray-500 mb-2 px-1">Use 8 or more letters, numbers and symbols</p>
+            <div class="flex items-center text-sm font-bold text-gray-700 mb-4 cursor-pointer">
+                <span>Password tips</span>
+                <div class="ml-1.5 h-4 w-4 rounded-full border border-gray-500 flex items-center justify-center">
+                    <span class="text-xs font-bold text-gray-600">i</span>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <label for="birthdate" class="block text-sm font-bold text-gray-700 mb-2">Birthdate</label>
+                <div class="relative">
+                    <input type="text" id="birthdate" placeholder="dd-mm-yyyy" class="w-full px-4 py-3 border-2 border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-4 text-gray-600 pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-pinterest-red text-white font-bold py-3 rounded-full hover:bg-red-700 transition duration-200">Continue</button>
+
+            <div class="my-5 flex items-center">
+                <hr class="flex-grow border-t border-gray-300" />
+                <span class="mx-3 text-sm font-bold text-gray-600">OR</span>
+                <hr class="flex-grow border-t border-gray-300" />
+            </div>
+
+            <button type="button" class="w-full border border-gray-300 text-gray-700 font-bold py-3 rounded-full flex items-center justify-center hover:bg-gray-50 transition duration-200">
+                <svg class="w-5 h-5 mr-3" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"></path>
+                    <path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691z"></path>
+                    <path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"></path>
+                    <path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.16-4.082 5.574l6.19 5.238C41.382 36.666 44 30.638 44 24c0-1.341-.138-2.65-.389-3.917z"></path>
+                </svg>
+                Continue with Google
+            </button>
+
+            <p class="text-xs text-gray-500 text-center mt-6">
+                By continuing, you agree to Pinterest's <a href="#" class="font-bold text-black underline">Terms of Service</a> and acknowledge you've read our <a href="#" class="font-bold text-black underline">Privacy Policy</a>. <a href="#" class="font-bold text-black underline">Notice at collection</a>.
+            </p>
+        </form>
+
+        <div class="mt-8 text-center">
+            <a href="#" class="font-bold text-black text-sm">Already a member? Log in</a>
+        </div>
+    </div>
+<%- include('partials/footer') %>
