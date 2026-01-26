@@ -10,7 +10,6 @@
 
 ### 🎯 *A backend-focused Pinterest clone demonstrating clean architecture, authentication workflows, and scalable design*
 
-[🚀 Quick Start](#-quick-start) • [📖 Documentation](#-authentication-flow) • [🏗️ Architecture](#-project-structure) • [🤝 Contributing](#-contributing)
 
 ---
 
